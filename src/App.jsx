@@ -1,28 +1,59 @@
 import { useState } from 'react'
 import Resume from './Resume.jsx'
+import Posts from './Posts.jsx'
 import './App.css'
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
   const navigateTo = (page) => {
-    setCurrentPage(page);
+    if (page === currentPage) return; // Don't transition if same page
+    
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentPage(page);
+      setIsTransitioning(false);
+    }, 150); // Half of the CSS transition duration
   };
 
   return (
     <div>
       <h1>Shane Darilek</h1>
       <nav>
-        <button onClick={() => navigateTo('home')}>Home</button>
-        <button onClick={() => navigateTo('resume')}>Resume</button>
+        <button 
+          className={currentPage === 'home' ? 'active' : ''} 
+          onClick={() => navigateTo('home')}
+        >
+          Home
+        </button>
+        <button 
+          className={currentPage === 'resume' ? 'active' : ''} 
+          onClick={() => navigateTo('resume')}
+        >
+          Resume
+        </button>
+        <button 
+          className={currentPage === 'posts' ? 'active' : ''}
+          onClick={() => navigateTo('posts')}
+          >
+            Posts
+          </button>
         <button onClick={visitGitHub}>GitHub</button>
-        <button onClick={() => navigateTo('contact')}>Contact Info</button>
+        <button 
+          className={currentPage === 'contact' ? 'active' : ''} 
+          onClick={() => navigateTo('contact')}
+        >
+          Contact
+        </button>
       </nav>
       
-      {/* Render different content based on currentPage */}
-      {currentPage === 'home' && <HomePage />}
-      {currentPage === 'resume' && <Resume />}
-      {currentPage === 'contact' && <ContactPage />}
+      <div className={`page-content ${isTransitioning ? 'fade-out' : 'fade-in'}`}>
+        {currentPage === 'home' && <HomePage />}
+        {currentPage === 'resume' && <Resume />}
+        {currentPage === 'posts' && <Posts />}
+        {currentPage === 'contact' && <ContactPage />}
+      </div>
     </div>
   )
 }

@@ -11,7 +11,6 @@ h1 {
 }
 
 nav {
-  padding-left: 1.2rem;
   text-align: left;
   list-style-type: none;
   display: flex;
@@ -23,23 +22,57 @@ button {
   padding: 0.3rem 0.5rem;
   border: #747bff;
   border-style: solid;
-  border-radius: 0.4rem;
-  transition-duration: 500ms;
+  border-radius: 0.4em;
+  box-shadow: .10em .10em 0 #747bff;
+  transition-duration: 500ms ease-in-out;
 }
 
 button:hover {
   background-color: #374151;
   color: #f9f9f9;
   cursor: pointer;
-  box-shadow: .15em .15em 8px #747bff;
   position: relative;
-  top: -0.1em;
-  left: -.01em;
-  transition-duration: 500ms;
+  transition-duration: 500ms ease-in-out;
 }
 
-button:active {
-  box-shadow: none;
-  position: static;
-  transition-duration: 100ms;
+button.active {
+  background-color: #374151;
+  color: #f9f9f9;
+  box-shadow:none;
+  position: relative;
+  right: -.15em;
+  bottom: -.15em;
+}
+
+/* Page transition styles */
+.page-content {
+  transition: opacity 0.3s ease-in-out;
+  min-height: 400px; /* Prevents layout shift during transitions */
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 1rem;
+  }
+
+  nav {
+    align-items: center;
+    flex-wrap: wrap ;
+  }
+
+  button {
+    border-width: .2em;
+    margin: 0.4rem 0.3rem;
+    width: 10em;
+    height: 5em;
+  }
+  
 }
