@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Traveling to Glacier National Park",
+        "date": "2025-09-24",
+        "excerpt": "First solo camping trip! Five days, four nights, beautiful adventure.",
+        "photos": [
+            "/photos/down_at_lo.jpeg",
+            "/photos/fire_lo.jpeg",
+            "/photos/garden_wall.jpeg",
+            "/photos/goat_friend.jpeg",
+            "/photos/hidden_falls.jpeg",
+            "/photos/lo_view.jpeg",
+            "/photos/portrait.jpeg"
+        ],
+        "data": "One of my favorite trips of all time. I left on that Thursday from home and flew out, rented a car, and camped for four total nights at the Apgar Campground. Each day I woke up and found a hike that I would enjoy the sunrise to. The first one was Hidden Lake and OH MY GOD was it beautiful. Not only that but I was very cold with my pants and sweatpants on. Day two was the long hike day! Wend up to the garden wall and hiked along the highland trail, 7 miles from Logans Pass to the Granite Park Chatel. The idea of walking through a forest that high up was phenominal!! Finally, the last full day, I hiked up to the Swift Current Fire Lookout, hurting my knees in the process, but I would do it again in a heartbeat. The views from the top were breathtaking. This was the trip of a lifetime (and yes I did go alone if you were wondering). Glacier? Check!"
+    },
+    {
+        "title": "Making this website",
+        "date": "2025-10-30",
+        "excerpt": "Putting this together and using react for the first time!",
+        "photos": [],
+        "data": "I have been putting off making one of these for a while simply because I didn't think I was capable of it. But today I just took that leap of faith and starting doing it! It came out nicely and I am excited to see what I can add to it. First I started off with making the home page a single web app. I didn't like the idea of linking between pages and wanted to keep the user in one location. Thus, I make the button that you see up top and wanted them to feel like actual buttons that you press in using the box-shadow. Next, I made the container that holds what the buttons will be changing between. At the point of writing this, I still need to fill in the other tabs but today I conpleted the blog post portion that I can add to! We'll see where this takes me and I'll look back at this post and enjoy the journey I embarked."
+    }
+]

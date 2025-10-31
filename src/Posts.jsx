@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import "./Posts.css";
-
-const postItems = [
-  { title: 'Understanding React Hooks', excerpt: 'An introduction to React Hooks and how to use them effectively in your projects.' },
-  { title: 'JavaScript ES6 Features', excerpt: 'A deep dive into the new features introduced in ES6 and how they can improve your code.' },
-  { title: 'CSS Grid vs Flexbox', excerpt: 'A comparison of CSS Grid and Flexbox for layout design, with use cases for each.' },
-];
+import postItems from './data/posts.json';
 
 function Posts() {
   const [currentPost, setCurrentPost] = useState(0);
@@ -33,8 +28,8 @@ function Posts() {
 
   return (
     <div className="posts-container">
-      <h2>Blog Posts</h2>
-      <p>Here are some of my blog posts.</p>
+      <h2>Entries</h2>
+      <p>A little snippets of my life for you to enjoy!</p>
       
       <div className={`post-content ${isTransitioning ? 'fade-out' : 'fade-in'}`}>
         {currentPost === 0 && (
@@ -52,12 +47,20 @@ function Posts() {
   );
 }
 
+function getFirstPhoto(post) {
+  if (post.photos && post.photos.length > 0) {
+    return post.photos[0];
+  }
+  return null;
+}
+
 function PostList({ onPostClick }) {
   return (
     <div className="post-list">
       {postItems.map((post, index) => (
         <div key={index} className="post-item" onClick={() => onPostClick(index)}>
           <h3>{post.title}</h3>
+          <p>{post.date}</p>
           <p>{post.excerpt}</p>
         </div>
       ))}
@@ -80,8 +83,25 @@ function Post({ postIndex, onBack }) {
       <h2>{post.title}</h2>
       <p className="post-excerpt">{post.excerpt}</p>
       <div className="post-content">
-        <p>Full content of the post goes here...</p>
-        <p>This is where you would add the complete blog post content. You can add multiple paragraphs, code examples, images, and any other content you want to include in your blog post.</p>
+        <div className='photos'> 
+          {post.photos && post.photos.length > 0 ? (
+            post.photos.map((photo, idx) => (
+              <img 
+                key={idx} 
+                src={photo} 
+                alt={`Post Image ${idx + 1}`}
+                onError={(e) => {
+                  console.log(`Failed to load image: ${photo}`);
+                  e.target.style.display = 'none';
+                }}
+                onLoad={() => console.log(`Successfully loaded: ${photo}`)}
+              />
+            ))
+          ) : (
+            <p>No photos available</p>
+          )}
+        </div>
+        <p>{post.data}</p>
       </div>
     </div>
   );
