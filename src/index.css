@@ -3,10 +3,32 @@
   line-height: 1.5;
   font-weight: 400;
 
-  /* Dark mode styles */
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* Custom Color Palette */
+  --color-darkest: #582f0e;
+  --color-dark-brown: #7f4f24;
+  --color-medium-brown: #936639;
+  --color-light-brown: #a68a64;
+  --color-beige: #b6ad90;
+  --color-light-beige: #c2c5aa;
+  --color-sage: #a4ac86;
+  --color-olive: #656d4a;
+  --color-dark-green: #414833;
+  --color-darkest-green: #333d29;
+
+  /* Semantic color assignments */
+  --primary-color: var(--color-dark-brown);
+  --secondary-color: var(--color-olive);
+  --accent-color: var(--color-medium-brown);
+  --background-color: var(--color-light-beige);
+  --card-background: #ffffff;
+  --text-primary: var(--color-darkest);
+  --text-secondary: var(--color-dark-green);
+  --text-muted: var(--color-olive);
+  --border-color: var(--color-beige);
+  --hover-color: var(--color-sage);
+
+  color: var(--text-primary);
+  background-color: var(--background-color);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,17 +42,12 @@ body {
   justify-content: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-primary);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+* {
+  box-sizing: border-box;
 }
+
+/* Remove old media query and replace with updated styles */

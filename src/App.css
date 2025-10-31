@@ -3,11 +3,15 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: var(--background-color);
+  color: var(--text-primary);
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: var(--primary-color);
+  text-shadow: 1px 1px 2px var(--color-beige);
 }
 
 nav {
@@ -15,39 +19,48 @@ nav {
   list-style-type: none;
   display: flex;
   justify-content: center;
+  margin: 2rem 0;
 }
 
 button {
   margin: 0 0.6rem;
-  padding: 0.3rem 0.5rem;
-  border: #747bff;
-  border-style: solid;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid var(--secondary-color);
   border-radius: 0.4em;
-  box-shadow: .10em .10em 0 #747bff;
-  transition-duration: 500ms ease-in-out;
+  background-color: var(--card-background);
+  color: var(--text-primary);
+  font-weight: 600;
+  box-shadow: 0.1em 0.1em 0 var(--secondary-color);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #374151;
-  color: #f9f9f9;
-  cursor: pointer;
-  position: relative;
-  transition-duration: 500ms ease-in-out;
+  background-color: var(--hover-color);
+  color: var(--card-background);
+  transform: translate(-0.1em, -0.1em);
+  box-shadow: 0.2em 0.2em 0 var(--secondary-color);
+  transition: all 300ms ease-in-out;
 }
 
 button.active {
-  background-color: #374151;
-  color: #f9f9f9;
-  box-shadow:none;
-  position: relative;
-  right: -.15em;
-  bottom: -.15em;
+  background-color: var(--primary-color);
+  color: var(--card-background);
+  box-shadow: none;
+  transform: translate(0.1em, 0.1em);
+  border-color: var(--primary-color);
 }
 
 /* Page transition styles */
 .page-content {
   transition: opacity 0.3s ease-in-out;
-  min-height: 400px; /* Prevents layout shift during transitions */
+  min-height: 400px;
+  width: 100%;
+  background-color: var(--card-background);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 4px 16px rgba(88, 47, 14, 0.1);
 }
 
 .fade-in {
@@ -56,6 +69,61 @@ button.active {
 
 .fade-out {
   opacity: 0;
+}
+
+/* Page-specific styles */
+.page-content h2 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.page-content p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+/* Homepage styles */
+.homepage-content {
+  padding: 3rem 2rem;
+}
+
+.homepage-content h2 {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Contact page styles */
+.contact-content {
+  padding: 2rem;
+}
+
+.contact-info {
+  background: var(--background-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(88, 47, 14, 0.1);
+}
+
+.contact-info h3 {
+  color: var(--secondary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  color: var(--text-primary);
+  text-align: left;
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 600px) {
