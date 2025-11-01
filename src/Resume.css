@@ -77,9 +77,14 @@
     padding: 0.5rem;
     gap: 1rem;
   }
+
+  .column {
+    flex: none;
+    width: 100%;
+  }
   
   .resume-section {
-    margin: 0.25rem 0;
+    margin: 0.25rem;
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(88, 47, 14, 0.1);
   }
