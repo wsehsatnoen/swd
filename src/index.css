@@ -44,10 +44,11 @@ body {
   min-height: 100vh;
   background-color: var(--background-color);
   color: var(--text-primary);
+
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 * {
   box-sizing: border-box;
 }
-
-/* Remove old media query and replace with updated styles */
