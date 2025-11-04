@@ -1,6 +1,6 @@
 {
   "name": "wsehsatnoen.github.io",
-  "homepage": "https://wsehsatnoen.github.io/",
+  "homepage": "https://wsehsatnoen.github.io/personal_blog",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -24,6 +24,7 @@
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
+    "gh-pages": "^6.3.0",
     "globals": "^16.4.0",
     "sharp": "^0.34.4",
     "svgo": "^4.0.0",
