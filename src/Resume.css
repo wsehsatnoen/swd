@@ -65,7 +65,7 @@
 }
 
 .column .left {
-  flex: 0.4 !important; /* Slightly smaller left column */
+  flex: 0.4; /* Slightly smaller left column */
 }
 
 .column .right {
@@ -76,13 +76,17 @@
 @media (max-width: 768px) {
   .resume-container {
     flex-direction: column;
-    padding: 0.5rem;
-    gap: 0.8rem; /* Reduced from 1rem */
+    gap: 1rem; /* Reduced from 1rem */
+    padding: 0.5rem; /* Reduced from 1rem */
   }
 
   .column {
     flex: none;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    margin-top: 0;
+    gap: 1rem;
   }
   
   .resume-section {
