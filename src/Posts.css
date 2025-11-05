@@ -1,7 +1,7 @@
 .posts-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   color: var(--text-primary);
 }
 
@@ -41,7 +41,7 @@
 
 .post-item {
   background: var(--card-background);
-  max-width: 300px;
+  max-width: 500px;
   border: 2px solid var(--border-color);
   border-radius: 12px;
   padding: 24px;
@@ -154,7 +154,8 @@
   }
   
   .post-detail {
-    padding: 24px;
+    padding: 10px;
+    margin: 10px !important;
   }
   
   .post-detail h2 {
