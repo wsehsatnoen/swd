@@ -30,6 +30,7 @@
   font-size: 1.4rem !important; 
   text-transform: uppercase;
   margin-bottom: 0.8rem; 
+}
 
 .resume-section h3 {
   color: var(--secondary-color);
