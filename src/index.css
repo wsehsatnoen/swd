@@ -49,6 +49,11 @@ body {
   overflow-y: scroll;
 }
 
+strong {
+  font-weight: 600;
+  color: var(--accent-color)
+}
+
 * {
   box-sizing: border-box;
 }

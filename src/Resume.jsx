@@ -33,19 +33,23 @@ function Resume() {
             <p><em>HEB Leander eFC 764</em></p>
             <p><em>2024 - Present</em></p>
             <ul className="experience-content">
-              <li>Coordinated workload distribution across automated systems and 80+ warehouse associates to ensure timely outbound and inbound logistics/deliveries.</li>
+              <li className="list-caption"><strong>Acheivments</strong></li>
               <li>Successfully collaborated with peers to improve facility payroll by 15%.</li>
               <li>Analyzed shipment data and employee performance metrics to drive improvements in throughput and operational efficiency</li>
               <li>Created Plan-O-Gram for Non-Conveyable products to merchandise effectively and improve pallet selection based on product size, movement, weight, etc.</li>
               <li>Successfully established SOP for equipment tracking, becoming one of the first facilities on process.</li>
+              <li className="list-caption"><strong>Duties</strong></li>
+              <li>Coordinated workload distribution across automated systems and 80+ warehouse associates to ensure timely outbound and inbound logistics/deliveries.</li>
               <li>Stepped into technician roles as needed, demonstrating adaptability and hands-on experience with system tools and diagnostics.</li>
             </ul>
             <h3>Service Lead - Cash Controller Specialist</h3>
             <p><em>Huntsville - HEB #728 / Austin 03 - HEB #425</em></p>
             <p><em>2019 – 2024</em></p>
             <ul className="experience-content">
-              <li>Directed daily operations on the sales floor, managing a team of 40+ employees to meet dynamic business demands and ensure seamless customer experiences.</li>
+              <li className="list-caption"><strong>Acheivments</strong></li>
               <li>Coached team members on standard operating procedures (SOPs), point-of-sale (POS) efficiency, and customer service best practices, improving overall IPM performance by 16%, hospitality scoring by 20%, and reducing transaction times.</li>
+              <li className="list-caption"><strong>Duties</strong></li>
+              <li>Directed daily operations on the sales floor, managing a team of 40+ employees to meet dynamic business demands and ensure seamless customer experiences.</li>
               <li>Oversaw store-level cash flow processes, consolidating and verifying financial data, and investigating discrepancies to maintain financial accuracy and accountability.</li>
             </ul>
           </div>
