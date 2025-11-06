@@ -19,7 +19,6 @@ function App() {
 
   return (
     <div>
-      <h1>Shane Darilek</h1>
       <nav>
         <button 
           className={currentPage === 'home' ? 'active' : ''} 
@@ -62,8 +61,9 @@ function App() {
 function HomePage() {
   return (
     <div>
-      <h2>Welcome to my personal blog!</h2>
-      <p>This is the home page content.</p>
+      <h2>Shane Darilek</h2>
+      <p>Hello!! Welcome, take your coat off and stay a while :)</p>
+      <p>Enjoy the view and feel free to explore.</p>
     </div>
   );
 }
