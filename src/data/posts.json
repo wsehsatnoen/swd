@@ -20,5 +20,15 @@
         "excerpt": "Putting this together and using react for the first time!",
         "photos": [],
         "data": "I have been putting off making one of these for a while simply because I didn't think I was capable of it. But today I just took that leap of faith and starting doing it! It came out nicely and I am excited to see what I can add to it. First I started off with making the home page a single web app. I didn't like the idea of linking between pages and wanted to keep the user in one location. Thus, I make the button that you see up top and wanted them to feel like actual buttons that you press in using the box-shadow. Next, I made the container that holds what the buttons will be changing between. At the point of writing this, I still need to fill in the other tabs but today I conpleted the blog post portion that I can add to! We'll see where this takes me and I'll look back at this post and enjoy the journey I embarked."
+    },
+    {
+        "title": "The Breadboard Computer",
+        "date": "2025-11-6",
+        "excerpt": "Building an 8-bit breadboard computer via Ben Eater's tutorial.",
+        "photos": [
+            "/photos/clock_pretrim.jpeg",
+            "/photos/clock_trimmed.jpeg"
+        ],
+        "data":"So here's one of the other things that I really wanted to challenge myself with! Using Ben Eater's youtube series (mind you, he does NOT descriptively tell you how to make it, but other than explain how it works) I have been trying to put this together and create a working 8-bit computer. So far I have completed the clock module (photo 1 and 2) and next I am going to work on completing the ALU."
     }
 ]
